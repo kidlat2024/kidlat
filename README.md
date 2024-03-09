@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # Kidlat Hugo Theme
 
 Kidlat is a low-bandwidth, text-only Hugo theme.
