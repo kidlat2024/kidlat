@@ -2,14 +2,15 @@
 
 # Kidlat Hugo Theme
 
-Kidlat is a low-bandwidth, text-only Hugo theme.
+Kidlat is a low-bandwidth, text-only [Hugo](https://gohugo.io) theme.
 
-This theme is verified to work with [Hugo](https://gohugo.io) versions v0.112.7–v0.121.2.
+This theme is verified to work with Hugo versions v0.112.7–v0.121.2.
 
 ## Features
 
+- Super lightweight
 - Responsive layout
-- Light and dark mode (determined by device's OS setting)
+- Auto light/dark mode (determined by device's OS setting)
 - No framework
 - No javascript
 - Full-text RSS feed
@@ -38,7 +39,7 @@ theme: kidlat
 
 ### 1. Change the default configuration
 
-Copy and change the default theme configuration inside `hugo.yaml` to the [site configuration](https://gohugo.io/getting-started/configuration/) file (`config.yaml`):
+Copy and change the default theme configuration inside `hugo.yaml` to the [site configuration](https://gohugo.io/getting-started/configuration/) file `config.yaml`:
 
 ```
 baseURL: https://example.org/        # Change to your website URL
@@ -62,7 +63,7 @@ Move or copy the `css` folder and its contents to your site's `static` folder. Y
 
 ```
 static/
-├── css
+└── css
    ├── kidlat.css
    └── README.md
 ```
