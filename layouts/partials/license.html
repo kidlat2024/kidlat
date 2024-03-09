@@ -1,0 +1,5 @@
+{{ if eq .Params.display_license true }}
+{{ with site.Params.short_title }}<span class="license">©{{ . }}{{ end }}
+{{ with site.Params.license_url }}<a href="{{ . }}">{{ end }}
+{{ with site.Params.license }}{{ . }}</a>.{{ end }}
+{{ with .Params.attribution }}{{ . | markdownify }}{{ end }}</span>{{ end }}

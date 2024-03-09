@@ -1,0 +1,13 @@
+baseURL: https://example.org/        # Change to your website URL
+title: Example News & Current Events # Change to your website title
+languageCode: en-us
+theme: kidlat
+
+params:
+  short_title: Example News           # Change to your website short title
+  display_name: EXAMPLE               # Change to your website display name
+  license: Creative Commons BY-SA 4.0 # Change to your website license
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/deed.en # Change to your license URL
+  description: "Example News is the trusted site for news and current events." # Change to your website description
+  logo: "/example-news.jpg" # The logo should be inside your static folder
+  footer: <span><a href="http://www.example.org/">This is the footer text.</a></span> <span><a href="#top">▲</a></span> # Change to your footer text and link

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">{{ with .Description }}
+<meta name="description" content="{{ . }}">{{ else }}{{ if .IsPage }}
+<meta name="description" content="{{ .Summary }}">{{ else }}{{ with site.Params.description }}
+<meta name="description" content="{{ . }}">{{ end }}{{ end }}{{ end }}
+
+<link rel="preload" href="/css/kidlat.css" as="style" />
+<link rel="stylesheet" href="/css/kidlat.css" />
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+<title>{{- if eq .Title site.Title -}}{{ site.Title }}{{- else -}}{{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}{{- end -}}</title>
+
+{{ with site.Params.shorttitle }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
+{{ template "_internal/opengraph.html" . }}{{ template "_internal/twitter_cards.html" . }}
+{{ partial "schema.html" . }}{{ with .Content }}{{ end }}
+</head>
+
+<body>
+{{ partialCached "banner.html" . }}
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+{{ partialCached "footer.html" . }}
+
+</body>
+</html>

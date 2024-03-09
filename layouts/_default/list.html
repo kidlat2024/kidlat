@@ -1,0 +1,8 @@
+{{ define "main" }}{{ partial "heading.html" . }}{{ .Content }}{{ range .Pages.GroupByPublishDate "January 2006" }}
+
+<div class="line"><ul>{{ range .Pages }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>{{ end }}
+</ul></div>
+{{ end }}
+
+{{ end }}

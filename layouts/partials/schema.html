@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{{ .Params.content_type }}",
+      "headline": {{ .Title }},
+      "image": [{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}],
+      "license": {{ .Site.Params.license }},
+      "datePublished": {{ .PublishDate }},
+      "dateModified": {{ .Lastmod }},
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Params.author }}",
+        "url": {{ .Params.author_url | absURL }}
+      },
+      "mainEntityOfPage": { "@type": "WebPage" },
+       "publisher": {
+        "@type": "Organization",
+        "name": {{ .Site.Params.short_title }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.logo | absURL }}
+        }
+      },
+      "description": "{{ .Params.description }}",
+      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    }
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": {{ .Site.Params.short_title }},
+      "url": {{ .Site.BaseURL }}
+    }
+</script>

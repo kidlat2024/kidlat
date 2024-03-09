@@ -1,0 +1,10 @@
+name = "Kidlat"
+license = "Apache-2.0"
+licenselink = "https://github.com/kidlat2024/kidlat/LICENSE"
+description = "A low-bandwidth, text-only Hugo Theme"
+homepage = "https://github.com/kidlat2024/kidlat/"
+tags = ["responsive", "minimal", "barebones", "no-javascript", "text-only", "dark-mode"]
+
+[author]
+  name = "Leon Kidlat"
+  homepage = "https://github.com/kidlat2024/"
