@@ -4,7 +4,7 @@
 
 Kidlat is a low-bandwidth, text-only [Hugo](https://gohugo.io) theme.
 
-This theme is verified to work with Hugo versions v0.112.7–v0.121.2.
+This theme is verified to work with Hugo versions v0.110.0–v0.121.2.
 
 ![Kidlat screenshot](https://github.com/kidlat2024/kidlat/blob/main/images/screenshot.png)
 
