@@ -12,7 +12,7 @@ This theme is verified to work with Hugo versions v0.110.0–v0.121.2.
 
 - Super lightweight
 - Responsive layout
-- Auto light/dark mode (determined by device's OS setting)
+- Auto light/dark mode (through media query)
 - No framework
 - No javascript
 - Full-text RSS feed
@@ -31,7 +31,7 @@ themes/
 └── kidlat
 ```
 
-2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file (`config.yaml`).
+2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file `config.yaml`.
 
 ```
 theme: kidlat
