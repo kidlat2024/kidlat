@@ -21,16 +21,17 @@ This theme is in use at [Kidlat News](https://kidl.at). Our site's [Github repo]
 
 ## Installation
 
-1. Download the theme at the root of your site:
+1. Copy the `kidlat` folder inside the `themes` folder of your site.
 
 ```
-git submodule add https://github.com/kidlat2024/kidlat.git themes/kidlat
+themes/
+└── kidlat
 ```
 
-2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file. If the file is called `config.yaml`:
+2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file (`config.yaml`).
 
 ```
-echo 'theme: kidlat' >> config.yaml
+theme: kidlat
 ```
 
 ## Configuration
