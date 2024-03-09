@@ -24,10 +24,10 @@ This theme is in use at [Kidlat News](https://kidl.at). Our site's [Github repo]
 git submodule add https://github.com/kidlat2024/kidlat.git themes/kidlat
 ```
 
-2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file. If the file is called `hugo.yaml`:
+2. Add the theme to the [site configuration](https://gohugo.io/getting-started/configuration/) file. If the file is called `config.yaml`:
 
 ```
-echo 'theme: hugo-flex' >> hugo.yaml
+echo 'theme: kidlat' >> config.yaml
 ```
 
 ## Configuration
