@@ -12,6 +12,7 @@ This theme is verified to work with [Hugo](https://gohugo.io) versions v0.112.7â
 - Light and dark mode (determined by device's OS setting)
 - No framework
 - No javascript
+- Full-text RSS feed
 - [100% score on performance, accessibility, best practices and SEO](https://pagespeed.web.dev/analysis/https-kidl-at/k1i6fc1anh?form_factor=mobile) on PageSpeed Insights
 
 ## Example site
