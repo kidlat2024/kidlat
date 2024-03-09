@@ -86,4 +86,4 @@ There are a number of optional front matter items that can be specified.
 
 ## License
 
-Kidlat theme is licensed under the [Apache License 2.0](https://github.com/kidlat2024/kidlat/LICENSE).
+Kidlat theme is licensed under the [Apache License 2.0](https://github.com/kidlat2024/kidlat/blob/main/LICENSE).
