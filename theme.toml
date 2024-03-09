@@ -1,10 +1,13 @@
 name = "Kidlat"
-license = "Apache-2.0"
-licenselink = "https://github.com/kidlat2024/kidlat/LICENSE"
+license = "Apache 2.0"
+licenselink = "https://github.com/kidlat2024/kidlat/blob/main/LICENSE"
 description = "A low-bandwidth, text-only Hugo Theme"
 homepage = "https://github.com/kidlat2024/kidlat/"
-tags = ["responsive", "minimal", "barebones", "no-javascript", "text-only", "dark-mode"]
+demosite = "https://kidl.at"
+tags = ["responsive", "minimal", "barebones", "no-javascript", "text-only", "dark-mode", "news"]
+features = []
+min_version = "0.110.0"
 
 [author]
   name = "Leon Kidlat"
-  homepage = "https://github.com/kidlat2024/"
+  homepage = "https://kidl.at"
